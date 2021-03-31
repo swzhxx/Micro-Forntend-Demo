@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal</title>
+    <link rel="stylesheet" href="./css/personal.css" />
+  </head>
+  <body>
+    <h1>I am Personal</h1>
+
+    <input class="input" />
+  </body>
+  <script>
+    ;((global) => {
+      global['pure_app_personal'] = {
+        bootstrap: () => {
+          console.log('pure_app_personal bootstrap')
+          return Promise.resolve()
+        },
+        mount: () => {
+          console.log('pure_app_personal mount')
+          // return render()
+        },
+        unmount: () => {
+          console.log('pure_app_personal unmount')
+          return Promise.resolve()
+        },
+      }
+    })(window)
+  </script>
+</html>
